@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter&family=Carter+One&family=Roboto+Slab:wght@900&display=swap"   rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Student Enrollment Form</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="box">
+            <h1>Students Enrollment Form</h1>
+            <input type="text" id="name" name="name" placeholder="Enter  Name">
+            <input type="text" id="email" name="email" placeholder="Enter  email">
+            <input type="text" id="language" name="language" placeholder="Enter  programming language">
+            <input type="text" id="mobile" name="mobile" placeholder="Enter  Mobile number">
+            <div id="btns">
+                <input type="button" name="button" id="btn" value="Add" onclick="add_new_row()">
+                <input type="reset" name="reset" id="rbtn" value="reset" onclick="clear_all_fields()">
+            </div>
+        </div>
+
+        <h1 id="section-2-heading">Enrolled Students</h1>
+        
+        <br /><br />
+        <table border="1" id="show">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Language</th>
+                    <th>Phone</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
+
+
